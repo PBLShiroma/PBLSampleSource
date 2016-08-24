@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/activity_base" android:id="@+id/OrderSelectItemTitle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="購入"
+        android:id="@+id/OrderSelectItem_BuyBtn"
+        android:layout_below="@+id/OrderSelectItemTitle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        android:layout_toRightOf="@+id/OrderSelectItem_BuyBtn"
+        android:id="@+id/OrderSelectItem_backBtn"
+        android:layout_below="@+id/OrderSelectItemTitle"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderSelectItemListView"
+        android:layout_below="@+id/OrderSelectItem_backBtn"
+        android:clickable="true" />
+
+</RelativeLayout>

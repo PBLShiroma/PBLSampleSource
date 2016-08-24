@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include layout="@layout/activity_base" android:id="@+id/CodeEditTitle"/>
+
+    <TextView
+        android:id="@+id/KeyCdLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CodeEditTitle"
+        android:text="第１キー" />
+
+    <EditText
+        android:id="@+id/KeyCd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/KeyCdLbl"
+        android:maxLength="3"
+        android:ems="10"
+        android:layout_alignEnd="@+id/KeySubCd"
+        android:inputType="number">
+        <requestFocus />
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/KeySubCdLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/KeyCd"
+        android:text="第２キー" />
+
+
+    <EditText
+        android:id="@+id/KeySubCd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/KeySubCdLbl"
+        android:ems="10"
+        android:maxLength="3"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/ValueLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/KeySubCd"
+        android:text="値" />
+
+
+    <EditText
+        android:id="@+id/Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:layout_below="@+id/ValueLbl"
+        android:maxLength="20" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登録"
+        android:layout_below="@+id/Value"
+        android:id="@+id/CodeEdit_EditBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="削除"
+        android:layout_below="@+id/Value"
+        android:layout_toRightOf="@+id/CodeEdit_EditBtn"
+        android:id="@+id/CodeEdit_DelBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="キャンセル"
+        android:layout_below="@+id/Value"
+        android:layout_toRightOf="@+id/CodeEdit_DelBtn"
+        android:id="@+id/CodeEdit_CancelBtn" />
+</RelativeLayout>

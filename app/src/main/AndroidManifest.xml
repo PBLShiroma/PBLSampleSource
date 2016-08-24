@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.instructor.sampleproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="LoginUser">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ItemIchiranActivity"/>
+        <activity android:name=".ItemEditActivity"/>
+        <activity android:name=".MenuActivity"/>
+        <activity android:name=".OrderSelectItemActivity"/>
+        <activity android:name=".OrderActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".OrderIchiranActivity"/>
+        <activity android:name=".OrderEditActivity"/>
+        <activity android:name=".UserEditActivity"/>
+        <activity android:name=".UserIchiranActivity"/>
+        <activity android:name=".CodeMIchiranActivity"/>
+        <activity android:name=".CodeMEditActivity"/>
+    </application>
+
+</manifest>

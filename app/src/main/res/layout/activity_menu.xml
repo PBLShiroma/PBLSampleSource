@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/activity_base" android:id="@+id/LoginTitle"/>
+
+    <Button
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="会員編集"
+        android:id="@+id/UserEditBtn"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="商品編集"
+        android:id="@+id/ItemEditBtn"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="コード編集"
+        android:id="@+id/CodeIchiranBtn"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="会員一覧編集"
+        android:id="@+id/UserIchiranBtn"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="注文画面"
+        android:id="@+id/OrderBtn"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="注文一覧画面"
+        android:id="@+id/OrderIchiranBtn"
+        android:layout_gravity="center_horizontal" />
+
+
+    <Button
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="ログアウト"
+        android:id="@+id/LogoutBtn"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

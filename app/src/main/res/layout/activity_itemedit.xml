@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include layout="@layout/activity_base" android:id="@+id/itemEditTitle"/>
+
+    <TextView
+        android:id="@+id/itemIDLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/itemEditTitle"
+        android:text="商品ID" />
+
+    <EditText
+        android:id="@+id/itemID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemIDLbl"
+        android:ems="10"
+        android:layout_alignEnd="@+id/itemName">
+        <requestFocus />
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/itemNameLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/itemID"
+        android:text="商品名" />
+
+
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemNameLbl"
+        android:ems="10"
+        />
+
+    <TextView
+        android:id="@+id/tankaLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/itemName"
+        android:text="単価" />
+
+
+    <EditText
+        android:id="@+id/tanka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:inputType="number"
+        android:layout_below="@+id/tankaLbl"
+        android:ems="10"
+        android:maxLength="4" />
+
+    <TextView
+        android:id="@+id/zaikoLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tanka"
+        android:text="在庫" />
+
+
+    <EditText
+        android:id="@+id/zaiko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:inputType="number"
+        android:layout_below="@+id/zaikoLbl"
+        android:ems="10"
+        android:maxLength="4" />
+
+    <TextView
+        android:id="@+id/itemAddressLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/zaiko"
+        android:text="生産地" />
+
+    <Spinner
+        android:id="@+id/TodofukenCd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemAddressLbl"
+        />
+
+    <TextView
+        android:id="@+id/PresentLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TodofukenCd"
+        android:text="プレゼント" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="プレゼント"
+        android:id="@+id/PresentFlg"
+        android:layout_below="@+id/PresentLbl" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登録"
+        android:layout_below="@+id/PresentFlg"
+        android:id="@+id/ItemEdit_EditBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="削除"
+        android:layout_below="@+id/PresentFlg"
+        android:layout_toRightOf="@+id/ItemEdit_EditBtn"
+        android:id="@+id/ItemEdit_DelBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="キャンセル"
+        android:layout_below="@+id/PresentFlg"
+        android:layout_toRightOf="@+id/ItemEdit_DelBtn"
+        android:id="@+id/ItemEdit_CancelBtn" />
+
+</RelativeLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_base" android:id="@+id/UserEditTitle"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/UserEditTitle">
+
+        <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/kaiinIDLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:text="会員ID" />
+
+            <TextView
+                android:id="@+id/kaiinID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/kaiinIDLbl" />
+
+            <TextView
+                android:id="@+id/userIDLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/kaiinID"
+                android:text="ユーザID" />
+
+            <EditText
+                android:id="@+id/userID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/userIDLbl"
+                android:ems="10"
+                android:layout_alignEnd="@+id/userName"
+                android:maxLength="6"
+                android:inputType="textVisiblePassword">
+                <requestFocus />
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/userNameLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/userID"
+                android:text="氏名" />
+
+             <EditText
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/userNameLbl"
+                android:ems="10"
+                android:maxLength="20" />
+
+            <TextView
+                    android:id="@+id/userAddressLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/userName"
+                    android:text="住所" />
+
+            <Spinner
+                android:id="@+id/TodofukenCd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/userAddressLbl"
+                />
+
+            <EditText
+                android:id="@+id/userAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TodofukenCd"
+                android:ems="10"
+                android:maxLength="100" />
+
+            <TextView
+                android:id="@+id/BirthdayLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/userAddress"
+                android:text="誕生日 yyyyMMdd" />
+
+            <EditText
+                android:id="@+id/Birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BirthdayLbl"
+                android:ems="10"
+                android:maxLength="8"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/userPasswordLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Birthday"
+                android:text="パスワード" />
+
+
+            <EditText
+                android:id="@+id/userPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/userPasswordLbl"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:maxLength="8" />
+
+            <TextView
+                android:id="@+id/userPasswordKakuninLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/userPassword"
+                android:text="パスワード確認" />
+
+
+            <EditText
+                android:id="@+id/userPasswordKakunin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:inputType="textPassword"
+                android:layout_below="@+id/userPasswordKakuninLbl"
+                android:ems="10"
+                android:maxLength="8" />
+
+            <TextView
+                android:id="@+id/userTypeLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/userPasswordKakunin"
+                android:text="ユーザタイプ" />
+
+
+            <Spinner
+                android:id="@+id/userType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/userTypeLbl" />
+
+            <TextView
+                android:id="@+id/SeikyuLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/userType"
+                android:text="請求額" />
+
+
+            <TextView
+                android:id="@+id/Seikyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/SeikyuLbl" />
+
+            <TextView
+                android:id="@+id/PointLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Seikyu"
+                android:text="ポイント数" />
+
+
+            <TextView
+                android:id="@+id/Point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/PointLbl" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登録"
+                android:layout_below="@+id/Point"
+                android:id="@+id/UserEdit_EditBtn" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="削除"
+                android:layout_below="@+id/Point"
+                android:layout_toRightOf="@+id/UserEdit_EditBtn"
+                android:id="@+id/UserEdit_DelBtn" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="キャンセル"
+                android:layout_below="@+id/Point"
+                android:layout_toRightOf="@+id/UserEdit_DelBtn"
+                android:id="@+id/UserEdit_CancelBtn" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

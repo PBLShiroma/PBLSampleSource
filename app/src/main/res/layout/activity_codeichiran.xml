@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/activity_base" android:id="@+id/CodeIchiranTitle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新規登録"
+        android:id="@+id/addCdBtn"
+        android:layout_below="@+id/CodeIchiranTitle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        android:layout_toRightOf="@+id/addCdBtn"
+        android:id="@+id/backCdBtn"
+        android:layout_below="@+id/CodeIchiranTitle"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cdListView"
+        android:layout_below="@+id/backCdBtn" />
+
+</RelativeLayout>

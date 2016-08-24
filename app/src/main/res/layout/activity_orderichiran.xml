@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/activity_base" android:id="@+id/OrderIchiranTitle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新"
+        android:id="@+id/OrderIchiranUpdateBtn"
+        android:layout_below="@+id/OrderIchiranTitle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="削除"
+        android:layout_toRightOf="@+id/OrderIchiranUpdateBtn"
+        android:id="@+id/OrderIchiranDeleteBtn"
+        android:layout_below="@+id/OrderIchiranTitle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        android:layout_toRightOf="@+id/OrderIchiranDeleteBtn"
+        android:id="@+id/OrderIchiranBackBtn"
+        android:layout_below="@+id/OrderIchiranTitle"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/OrderIchiranItemListView"
+        android:layout_below="@+id/OrderIchiranBackBtn"
+        android:clickable="true" />
+
+</RelativeLayout>
